@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<meta name="generator" content="Framer d19f530">
+<title>Assignment1</title>
+<link rel="shortcut icon" href="https://www.zoodigital.com/wp-content/themes/zoo/img/favicon.ico" type="image/x-icon">
+ <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<style>
+@media screen and (max-width: 900px){
+body{
+flex-direction:column;}
+}
+body{
+background-color: lightyellow;
+margin: 25px; 
+padding: 0;
+}
+span.fea{
+background: lightgrey;
+font: 15px Arial, sans-serif;
+border: 10px solid lightgey;
+border-radius: 30px;
+padding: 8px;
+}
+span.tm{
+background: lightgrey;
+font: 15px Arial, sans-serif;
+border: 10px solid lightgey;
+border-radius: 30px;
+padding: 10px;
+}
+span.two{
+background: black;
+ padding: 10px;
+border: 50px solid lightgey;
+border-radius: 10px;
+color: white;    
+}
+span.two:hover{
+opacity: 80%}
+span.one{
+background: lightgrey;
+ padding: 8px;
+border: 30px solid lightgey;
+border-radius: 10px;   
+}
+span.one:hover{
+opacity: 80%}
+a:hover{
+color: red;
+}
+div.aa{
+font: 70px Arial, sans-serif;
+}
+div.ab{
+font: 50px Arial, sans-serif;
+}
+
+div.b{
+font: 20px Arial, sans-serif;
+color: grey;
+}
+span.c{
+background: black;
+border: 10px solid black;
+border-radius: 15px;
+padding: 8px;
+color: white;
+font-size: 18px;
+}
+span.c:hover{
+border-color: darkslategrey;
+background: darkslategrey;
+}
+div.f{
+border: 10px solid lightgey;
+border-radius: 15px;
+width: 800px;
+height= 350px;
+}
+span.d{
+background: #fbded6;
+border: 10px solid #fbded6;
+border-radius: 30px;
+padding: 8px;
+color: black;
+font-size: 18px;
+}
+div.e{
+margin-right: 750px;
+font: 20px Arial, sans-serif;
+color: grey;
+}
+div.g{
+background:#D9EEE1;
+ width:30%;
+height: 150px;
+padding: 20px;
+float: center;  
+  display:inline-flex;
+border-radius: 16px;
+overflow: hidden;
+}
+div.h{
+width: 100%;
+overflow: auto;
+font: 20px Arial, sans-serif;
+color: grey;
+}
+div.h div{
+font: 17px Arial, sans-serif;
+width:33%;
+  float:left;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 150px;
+}
+.full-boxer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.comment-box:hover{
+    margin-top: 12px;
+}
+.comment-box{
+    width: 500px;
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 3px 3px 25px rgba(0,0,0,0.3);
+}
+.Profile{
+    display: flex;
+    align-items: center;
+}
+.profile-image{
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.profile-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.Name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.Name span{
+    color: gray;
+    margin-top: 2px;
+}
+.comment pre{
+    color: grey;
+}
+span.k{
+background: lightgrey;
+font: 15px Arial, sans-serif;
+border: 20px solid lightgey;
+border-radius: 15px;
+padding: 10px;
+}
+span.k span{
+background: white;
+border: 7px solid white;
+border-radius: 10px;
+}
+div.m{
+ width:25%;
+height: 650px;
+padding: 20px;  
+display:inline-flex;
+border-radius: 16px;
+overflow: hidden;
+flex-direction: column;
+}
+span.nn{
+font: 15px Arial, sans-serif;
+font-weight: normal;
+border: 10px solid lightgey;
+border-radius: 30px;
+padding: 10px;
+height: 10px;
+}
+dt{
+border-style: inset;
+border-width: 5px;
+border-color: lightgrey;
+padding: 10px;
+outline-color: black;
+border-radius: 15px;
+padding: 15px;
+font: 25px bold;
+cursor: pointer;
+}
+dd {
+  display: none;
+ padding: 8px;
+   }
+dt:hover + dd{
+display: block;
+color: blue;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+form{
+background: lavender;
+padding: 0;
+}
+table{ 
+border-spacing: 5px;
+border: none;
+}
+th{;
+padding: 10px;
+text-align:left;
+font-size: 25px;
+}
+td{
+padding: 10px;
+text-align:left;
+}
+</style><script>
+function stopMarquee() {
+  document.querySelector('marquee').stop();
+}
+
+function startMarquee() {
+  document.querySelector('marquee').start();
+}</script>
+</head>
+<body>
+<p style="font-size: 20px;">&nbsp; &#11045<b> Milton</b><b>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp; &emsp; &emsp; &emsp;<a href="#1" style="text-decoration: none;"> Features</a> &emsp; &emsp;<a href="#2" style="text-decoration: none;">Testimonial</a>&emsp; &emsp;<a href="#3" style="text-decoration: none;"> Pricing </a>&emsp; &emsp;<a href="#4" style="text-decoration: none;"> FAQs</a> &emsp; &emsp;<a href="#4" style="text-decoration: none;"> Blog</a> &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;</b></span><span class="one"><b> Log in</span> <span class="two"><b> Get started</b></span></b>
+</p>
+<hr>
+<br><br>
+<br>
+<center><div><span><b>An other way to manage time</b></span>
+<pre><div class="ab"><b>Your new favorite 
+calendar &#11036 app</b></div>
+<div class="b"><b>Here you should explain how cool your app is. Remember,
+ focus on the benefits for your users, not on the features.</b> </div>
+</pre><br>
+<span class="c"><a href="https://pierrejacquel.lemonsqueezy.com/checkout?cart=dbd2f159-7e50-4275-85ec-e8e9a6938362" style="color:white; text-decoration:none;"><b> Get started, it's free </b></a></span><br><br>
+Free 14 days trails,no credit card needed<br>
+</div><br><br>
+<p class="f"><img src="https://superpage.netlify.app/static/media/tasks.2ffea4b46d8607e69368.gif" alt="superpage"><br></p>
+<br><br><br>
+<br>
+<section id="1">
+<br><p><span class="fea"><b>Our main features &#9723&#9723</b></span><br>
+<div class="ab"><b>Discover your new superpowers<b></div><br>
+</p><br>
+<br>
+<span class="d" style="margin-right: 1000px;"><b>Seamless Scheduling</b></span>
+<div style="float: right;"><img src="https://static.wixstatic.com/media/c80483_b6b47cf441fa4bada2e8b20041fef72d~mv2.png/v1/fill/w_640,h_640,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c80483_b6b47cf441fa4bada2e8b20041fef72d~mv2.png" alt="planning" width=500px height= 350px border-radius=20px;></div>
+<p style="margin-right: 700px;font: 40px Arial, sans-serif"><b>&nbsp;&nbsp;&nbsp; Focus on what matters most for you</b></p><br>
+<br>
+<br><br>
+<pre><div class="e">Effortlessly plan your day with our intuitive drag-and-
+drop interface. Sync with multiple calendar platforms,
+import events from emails, and add participants with
+just a few clicks.</div>
+</pre>
+<br>
+<span class="d" style="margin-left:300px;"><b> Smart Reminders & Task</b></span><br>
+<p style="margin-left: 500px;font: 40px Arial, sans-serif"><b> &nbsp; Never miss an important<br>deadline or event again</b></p><br>
+<pre><div class="e" style="margin-left:700px;">Never miss an important deadline again with our AI-driven 
+notifications. Our app intelligently analyzes your schedule
+to prioritize what's most important, keeping you on track
+and ensuring your day is productive and stress-free.</div>
+</pre>
+<span class="d" style="margin-right: 1000px;"><b>Seamless Scheduling</b></span><img src="https://cdn.dribbble.com/userupload/5212370/file/original-518dbde1c2de0400168fd627d48fa87b.png?resize=1024x768" alt="notification" align="right" width=500px height= 350px border-radius=20px;>
+<p style="margin-right: 700px;font: 40px Arial, sans-serif"><b>&nbsp;&emsp;Focus on what matters most <br>for you</b></p><br>
+<br> <br>
+<pre><div class="e">Effortlessly plan your day with our intuitive drag-and-
+drop interface. Sync with multiple calendar platforms,
+import events from emails, and add participants with
+just a few clicks.<br><br><br>
+</div>
+</pre>
+<br>
+<span class="d" style="margin-left:300px;"><b> Smart Reminders & Task</b></span><br>
+<p style="margin-left: 500px;font: 40px Arial, sans-serif"><b> &nbsp; Never miss an important<br>deadline or event again</b></p><br>
+<pre><div class="e" style="margin-left:700px;">Never miss an important deadline again with our AI-driven 
+notifications. Our app intelligently analyzes your schedule
+to prioritize what's most important, keeping you on track
+and ensuring your day is productive and stress-free.</div>
+</pre>
+<br><span class="fea"><b>And so much more...&#128188;</b></span><br>
+<div class="ab"><b>Our features to make your life easier<b></div><br>
+</center>
+<div class="g" style="background-color:#D9EEE1;"><img src="https://as1.ftcdn.net/v2/jpg/05/51/92/02/1000_F_551920227_JvMy0fvPvqKpGtQdQZV4OuWtmn0KsmZr.jpg" alt="device-sync" width=400px height=155px></div>
+<div class="g" style="background-color:#D9EEE1;"><img src="https://www.msoutlook.info/pictures/outlook-on-the-web-calendar-import.png" alt="auto-import"  width=400Spx height=155px "></div>
+<div class="g" style="background-color:#D9EEE1;"><img src="https://images.hindustantimes.com/tech/img/2023/08/17/960x540/Google_Calendar_1630438019768_1692264719031.JPG" alt="task-delegation" width=400px height=155px></div>
+<br><br>
+<div class="h">
+<div><span class="fea"><b>Cross-Device Sync</b></span>
+<p> Keep your schedule in sync across all your 
+devices, ensuring seamless access to your 
+calendar, events, and tasks wherever you go.</p>
+</div>
+<div><span class="fea" style="background-color:bisque;"><b>Auto Event Import</b></span>
+<p> Automatically import events from emails, social media, and other sources, so you never miss a beat or have to manually input details.</p>
+</div>
+<div><span class="fea" style="background-color:skyblue;"><b>Task Delegation</b></span>
+<p>Easily assign tasks to team members, family, or friends, promoting shared responsibility and seamless collaboration.</p>
+</div>
+</div>
+<br><br>
+<div class="g" style="background-color:#D9EEE1;"><img src="data:image/png;base64,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" alt="voicecommand" width=350px height=140px></div>
+<div class="g" style="background-color:#D9EEE1;"><img src="data:image/jpeg;base64,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" alt="import"  width=350px height=140px "></div>
+<div class="g" style="background-color:#D9EEE1;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMm_7vh4m8BiCwYhGfFcy4GyU-xymmP3BPHQ&usqp=CAU" alt="task-delegation" width=350px height=140px></div>
+<br><br>
+<br>
+<div class="h">
+<div><span class="fea" style="background-color:paleturquoise;"><b>Voice Command Integration</b></span>
+<p> Quickly create events, set reminders, or reschedule appointments with voice commands, thanks to compatibility with popular virtual assistants.</p>
+</div>
+<div><span class="fea" style="background-color:pink;"><b>Customizable Alerts</b></span>
+<p> Personalize notification types and timings for events, tasks, and goals, ensuring you stay on track and informed without feeling overwhelmed.</p>
+</div>
+<div><span class="fea" style="background-color:lightstaleblue;"><b>Privacy Protection</b></span>
+<p>Safeguard your personal information and event details with our robust security measures, including end-to-end encryption and optional password protection.</p>
+</div>
+</div><br>
+<br><br>
+</section>
+<section id="2">
+<br><center>
+<br><span class="tm"><b>They already love our products &#128525;</b></span><br>
+<br>
+<div class="ab"><b>See what our users say about us<b></div><br>
+</center>
+    <section class="main" 
+onmouseover="stopMarquee()";
+onmouseout="startMarquee()">
+<marquee behavior="scroll" scrollamount="4">
+  <div class="full-boxer">
+   <div class="comment-box">
+    <div class="box-top">
+   <div class="Profile">
+     <div class="profile-image">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHr1qKlLqlDo6uQHadRBnBQBv3S2G_u9frqg&usqp=CAU"> </div>
+   <div class="Name">  
+     <span>@Ranidi Lochana</span>
+      </div>
+     </div>
+  </div>
+   <div class="comment">
+   <pre>I'm not the most organized person, but 
+this app has made it so easy for me to stay on top
+of things! I love how I can set reminders and get
+notifications, and it's really helped me.
+                                              <br> &#9733&#9733&#9733
+     </pre>    </div>
+ </div>
+ <div class="comment-box">
+    <div class="box-top">
+   <div class="Profile">
+     <div class="profile-image">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0qUSGuFlPQTl3srSPiLSGevHDGPZpI-s2PkRt1D5ZO1iVGUq21mL5CoVlwnkVf7iPjTI&usqp=CAU"> </div>
+   <div class="Name">  
+     <span>@Ranidi Lochana</span>
+      </div>
+     </div>
+  </div>
+   <div class="comment">
+   <pre>
+This app has saved me so much time and stress! 
+I used to constantly forget important dates, but 
+now I can stay on top of everything You should test.
+                                                        <br>&#9733&#9733&#9733&#9733
+     </pre>    </div>
+ </div>
+ <div class="comment-box">
+    <div class="box-top">
+   <div class="Profile">
+     <div class="profile-image">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtKSxKu3q-Xnod156ivypfAuMAHooQ7JTffQ&usqp=CAU"> </div>
+   <div class="Name">  
+     <span>@Ranidi Lochana</span>
+      </div>
+     </div>
+  </div>
+   <div class="comment">
+   <pre>
+ I love how user-friendly this app is!
+ It's so easy to add events and set reminders, and 
+ it's made my life so much more organized.
+                                                      <br> &#9733&#9733&#9733&#9733&#9733
+     </pre>    </div>
+ </div> <div class="comment-box">
+    <div class="box-top">
+   <div class="Profile">
+     <div class="profile-image">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZP4x2CRMO514GrkSvpBS1UN14oWusSfudcQ&usqp=CAU"> </div>
+   <div class="Name">  
+     <span>@annie Devy</span>
+      </div>
+     </div>
+  </div>
+   <div class="comment">
+   <pre>
+This calendar app has been a lifesaver! 
+I used to forget important events, but 
+now I'm always on top of my schedule.
+                                             <br>  &#9733&#9733&#9733&#9733
+     </pre>    </div>
+ </div></marquee>
+  </section>
+<br><br>
+</section><section id="3">
+<br><center>
+<br><span class="tm"><b>Pricing and plans &#x1F4B0;</b></span><br><br>
+<div class="ab"><b>Find the best plan for your needs<b></div><br>
+<br><span class="k"><b><span background="white">&nbsp;Monthly&nbsp;</span> &nbspAnnually</b></span><br>
+<br> <br><b>save 30%&emsp;</b><span class="tm"><b>best Deals &#129395; &#128513;</b></span><br><br>
+<br><br>
+<div class="m" style="background-color:papayawhip;"><span class="nn" style="background: lightgrey;"><b>Free</b></span>
+<p style="font-weight:normal;">So you can see how incredible our tool is.<br><br></p>
+<p style="font-size:40px;">$0<sub>/mo</sub></p>
+<span class="c"><a href="#3" style="color:white; text-decoration:none;"><b> Get started</b></a></span>No credit card required<br><br>
+<h4 style="color:blue;">All free features,plus:</h4>
+<p>&#10003; A cool feature</p>
+<p>&#10003; A basic feature</p>
+<p>&#10003; A top feature with limitations</p>
+<p>&#10003; A upgraded features</p>
+</div>
+<div class="m" style="background-color:white;"><span class="nn" style="background: bisque;"><b>Starter</b></span>
+<p style="font-weight:normal;">So you can see how incredible our tool is.</p>
+<br><p style="font-size:40px;">$19<sub>/mo</sub></p>
+<span class="c"><a href="#3" style="color:white; text-decoration:none;"><b> Get started</b></a></span>7 days freetrail No credit card required<br><br>
+<h4 style="color:blue;">All free features,plus:</h4>
+<p>&#10003; A cool feature</p>
+<p>&#10003; A basic feature</p>
+<p>&#10003; A top feature with limitations</p>
+<p>&#10003; A upgraded features</p>
+</div>
+<div class="m" style="background-color:papayawhip;"><span class="nn" style="background: gold;"><b>Premium</b></span>
+<p style="font-weight:normal;">So you can see how incredible our tool is.<br><br></p>
+<p style="font-size:40px;">$49<sub>/mo</sub></p>
+<span class="c"><a href="#3" style="color:white; text-decoration:none;"><b> Get started</b></a></span>7 days freetrail No credit card required<br><br>
+<h4 style="color:blue;">All free features,plus:</h4>
+<p>&#10003; A cool feature</p>
+<p>&#10003; A basic feature</p>
+<p>&#10003; A top feature with limitations</p>
+<p>&#10003; A upgraded features</p>
+</div>
+<br> <br>
+<br><span class="tm"><b>Relevant stuff, bla bla &#x1F4E3;</b></span><br><br>
+<br> <br></section>
+<br><section id="4">
+<div class="ab"><b>Frequently asked questions<b></div><br>
+<br>
+<br>
+<dl >
+<dt>Can I cancel my subscrition?</dt>
+<dd>You can cancel your plan whenever you'd like. You'll be downgraded to the free plan. You won't be locked out of any projects that have paid plans.</dd>
+<br>
+<dt>What happens when my trial ends?</dt>
+<dd>When your trial period ends, your account will automatically be downgraded to our free plan, with limited features and functionality. To continue enjoying the full benefits of our service, you can upgrade to one of our paid plans at any time during or after the trial. Your data and settings will be preserved, ensuring a seamless transition as you move forward with our SaaS platform.</dd>
+<br>
+<dt>What payment methods do you offer?</dt>
+<dd>We aim to provide a seamless experience for our customers. We accept a variety of payment methods, including major credit cards (Visa, MasterCard, American Express, and Discover), PayPal, and bank transfers.</dd>
+<br>
+<dt>What is your refund policy?</dt>
+<dd>Our refund policy is designed with customer satisfaction in mind. If you are not satisfied with our service, you can request a full refund within 30 days of your initial purchase. To initiate the refund process, please contact our support team through the "Help" section in your account or email us at support@Milton.com, and we'll be happy to assist you.</dd>
+<br>
+<dt>Do you offer discounts to educational institutions ?</dt>
+<dd>Yes, we are happy to support educational institutions by offering special discounts on our SaaS platform. Please reach out to our sales team at sales@Milton.com with your institution's details, and we will provide you with more information on our exclusive educational pricing options.</dd>
+</dl><br>
+<br> <br><center>
+<br><span class="tm"><b>Last call Baby! &#x1F680 </b></span><br><br>
+<br> <br>
+<div class="ab"><b>Ready to start?</b></div><br>
+<br>
+<div class="b"><b>Here is your last chance to explain how cool your app is. Focus<br><br> on the benefits for your users, not on the features. </b> </div>
+<br><br>
+<br><span class="c"><a href="https://pierrejacquel.lemonsqueezy.com/checkout?cart=dbd2f159-7e50-4275-85ec-e8e9a6938362" style="color:white; text-decoration:none;"><b> Get started, it's free </b></a></span><br><br><br>
+</center><br></section>
+<br>
+<form><center>
+<table>
+<tr><tr>
+<th> <p style="font-size: 30px;"> &#11045<b> Milton</b></th>;
+<th> Products</th>&nbsp
+<th> Resources</th>
+<th> Others</th>
+<th> From the blog</th>
+</tr><tr>
+<td><pre style="font-size: 15px; color:darkslategray;">A short text explaining 
+why my startup is so cool</pre></td>
+<td> <a href="#1" style="text-decoration: none;"> Features</a></td>
+<td> <a href="#2" style="text-decoration: none;"> Change log</a></td>
+<td> <a href="#fea" style="text-decoration: none;"> Privacy</a></td>
+<td><a href="#fea" style="text-decoration: none;">Mastering Your Schedule </a> </td>
+</tr>
+<tr>
+<td>&copy; Ek29</td>
+<td> <a href="#tm" style="text-decoration: none;"> Testimonials</a></td>
+<td> <a href="#fea" style="text-decoration: none;"> Help center</a></td>
+<td> <a href="#fea" style="text-decoration: none;"> Terms</a></td>
+<td><a href="#fea" style="text-decoration: none;">Organizing Your Calendar  </a> </td>
+</tr>
+<tr><td><a href="#" class="fa fa-facebook"></a> <a href="#" class="fa fa-twitter"></a> <a href="#" class="fa fa-linkedin"></a></td>
+<td> <a href="#fea" style="text-decoration: none;"> Pricing</a></td>
+<td> <a href="#fea" style="text-decoration: none;"> Blog</a></td>
+<td> <a href="#fea" style="text-decoration: none;"> Affiliation</a></td>
+<td><a href="#fea" style="text-decoration: none;">The Power of Prioritization </a> </td>
+</tr>
+<tr>
+<td></td>
+<td> <a href="#fea" style="text-decoration: none;"> FAQ's</a></td>
+ <td> <a href="#fea" style="text-decoration: none;"> contact</a></td>
+<td> <a href="#fea" style="text-decoration: none;"> Press</a></td>
+<td><a href="#fea" style="text-decoration: none;">Maximizing Your Minutes </a> </td>
+</tr>
+</tr></table></center>
+<br>
+<br>
+</form>
+</body>
+</html>
